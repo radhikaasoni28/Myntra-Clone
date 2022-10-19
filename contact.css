@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+}
+
+/* section one  */
+.contact{
+    position: relative;
+    min-height: 80vh;
+    padding: 50px 100px;
+    /* padding-top: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:url(b1.jpg);
+    background-size: cover;
+    font-size: 18px;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+}
+
+.contain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contain .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contain .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contain .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    /* border-radius: 100%; */
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.contain .contactinfo .box .txt{
+    display: flex;
+    margin-left: 20px;
+    font-size: 17px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contain .contactinfo .box .txt h3{
+    font-weight: 500;
+    color: black;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background-color: #fff;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+ .contactForm .inputBox span{
+    position:absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666; 
+} 
+
+.contactForm .inputBox select{
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    color: #666; 
+} 
+
+.contactForm .inputBox select option{
+    font-size: 18px;
+    line-height: 1.5;
+    color: brown;
+}
+
+.contactForm .inputBox input:focus~ span,
+.contactForm .inputBox input:valid~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+
+
+.contactForm .inputBox input[type='submit']{
+    width: 100px;
+    background: #00bcd4;
+    columns: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media(max-width:990px){
+    .contact{
+        padding: 50px;
+    }
+    .contain{
+        flex-direction: column;
+    }
+    .contain .contactinfo{
+        margin-bottom: 40px;
+    }
+
+    .contain .contactinfo , .contactform{
+        width: 100%;
+    }
+}  
+
+
+@media(max-width:858px){
+    .contact{
+        position: relative;
+        height: 100%;
+        padding: 40px 80px;
+    }
+
+    .contain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactForm{
+        margin-top: 50px;
+        width: 100%;
+        padding: 40px;
+        background-color: #fff;
+    }
+}
